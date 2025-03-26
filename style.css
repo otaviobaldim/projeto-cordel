@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url(https://fontsfree.net/comic-sans-ms-w05-bold-italic-font-download.html);
+
+@font-face {
+    font-family: Paragrafo;
+    src: url(fontes/FontsFree-Net-comicsans4.ttf) format('opentype');
+    font-weight: normal;
+}
+
+@import url(https://fonts.google.com/specimen/Luckiest+Guy?query=Luckiest+Guy);
+
+@font-face {
+    font-family: Título;
+    src: url(fontes/LuckiestGuy-Regular.ttf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #000 ;
+    --cor2: #fff ;
+    --font-padrao: Paragrafo;
+    --font-Título: Título;
+    
+ }
+
+
+ body {
+        background-color: var(--cor1);
+ }
+
+
+
+header { 
+     background-color: #000000;
+     margin-top: -21px;
+     margin-left:-8px ;
+     margin-right:-8px ;
+     height: 180px;
+     text-align: center;
+     padding: 50px;
+     
+}
+
+header  {
+    color: rgb(255, 255, 255);
+}
+
+ h1 { 
+    color: var(--cor2);
+    font-family: var(--font-Título);
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 45px;
+}
+
+#oi {
+    text-align: center;
+    font-family: cursive;
+ }
+
+ section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 4%;
+    font-family: var(--font-padrao);
+    font-size: 20px;
+    
+
+ }
+
+section.normal {
+    background-color: var(--cor2);
+    }
+
+ section.img {
+    background-color: gray;
+    color: var(--cor2);
+    box-shadow: inset 6px 6px 13px 0px rgba(49, 49, 49, 0.678) ;
+    background-attachment: fixed; 
+    
+}
+
+section.img > p {
+    background-color: rgba(138, 112, 112, 0.26);
+    width: 300px;
+    padding-left: 10px;
+    text-shadow: 1px 1px black;
+    border-radius: 8px;
+}
+
+section#img1 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img2 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+}
+
+ footer {
+background-color: #000;
+ }
